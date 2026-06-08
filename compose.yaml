@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: vector-postgres
+    environment:
+      POSTGRES_DB: vectordb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+        - "5432:5432"
