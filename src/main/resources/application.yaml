@@ -1,3 +1,6 @@
 spring:
   application:
     name: vector-search-engine
+
+  config:
+    import: classpath:db/db-local.yaml
